@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +29,6 @@ body {
   opacity: 0;
   animation: fadeInSlide 2s forwards;
 }
-
 .section h2 { animation-delay: 0.5s; }
 .section p { animation-delay: 1s; }
 
@@ -126,12 +126,18 @@ button:hover {
 <div id="step4" class="section">
   <h1>💞 You are so special to me Noor 💞</h1>
   <h2>From: Muhammad Ali 💖</h2>
-  <button onclick="step5()">Final Surprise 💌</button>
+  <button onclick="step5()">Next 💌</button>
 </div>
 
 <div id="step5" class="section">
   <h2>💌 Noor, always keep me in your memories 💖</h2>
   <p>Our journey together is my happiest memory 🌹</p>
+  <p class="love">💞💞💞</p>
+  <button onclick="step6()">Next 💖</button>
+</div>
+
+<div id="step6" class="section">
+  <h2>💖 I love you always, meri jaan 💖</h2>
   <p class="love">💞💞💞</p>
   <h3>Forever Yours, Muhammad Ali 💖</h3>
 </div>
@@ -146,6 +152,7 @@ function step2(){ showSection('step2'); }
 function step3(){ showSection('step3'); }
 function step4(){ showSection('step4'); }
 function step5(){ showSection('step5'); }
+function step6(){ showSection('step6'); }
 
 function showSection(id){
   document.getElementById(id).style.display = 'block';
